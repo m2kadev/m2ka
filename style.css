@@ -57,6 +57,7 @@ a {
 .nav-heading {
     font-size: 1.3em;
 }
+
 /*
 .nav-heading span {
     text-shadow: rgb(230, 230, 230) 4px 0px 0px, 
@@ -155,7 +156,7 @@ a {
     border: 2px solid #e2e2e2;
     font-weight: 600;
     font-size: 1em;
-    padding: 15px 57px 15px 30px;
+    padding: 15px 57px 15px 15px;
     border-radius: 40px;
     position: relative;
     background: transparent;
@@ -163,14 +164,19 @@ a {
 }
 
 .header-btn::after {
-    content: "\2192";
+    box-sizing: border-box;
+    content: '»';
     position: absolute;
     right: 0px;
     top: -1px;
-    padding: 16px 17px;
+    font-size: 1.5em;
+    width: 49px;
+    height: 49px;
+    padding-top: 8px;
+    text-align: center;
     background: #131313;
     color: #fafbfc;
-    font-weight: 600;
+    font-weight: 500;
     border-radius: 50%;
 }
 
@@ -207,6 +213,7 @@ a {
     font-size: 1em;
     padding-left: 20px;
     font-family: 'Inconsolata' !important;
+    letter-spacing: 2px;
 }
 
 .about-left h2 {
@@ -232,11 +239,81 @@ a {
     font-weight: 300;
 }
 
+/*
+
 .about-btn {
     background: #111;
     color: #fff;
-    padding: 15px 48px;
+    padding: 12px 25px;
+    transition: 0.3s ease-in;
+    position: relative;
 }
+
+.about-btn i {
+    padding-left: 0px;
+    opacity: 0;
+    transition: 0.3s ease-in;
+    visibility: hidden;
+    font-size: 0%;
+
+}
+
+.about-btn:hover i {
+    padding-left: 8px;
+    display: inline;
+    opacity: 1;
+    visibility: visible;
+    font-size: 1em;
+}
+
+.about-btn:hover {
+    padding-left: 15px !important;
+}
+
+*/
+
+.about-btn {
+    background-color: #111;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 16px;
+    width: 180px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.about-btn {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;
+}
+
+.about-btn:after {
+    content: '»';
+    position: absolute;
+    font-size: 2em;
+    opacity: 0;
+    top: 7px;
+    right: -20px;
+    transition: 0.3s;
+}
+
+.about-btn:hover {
+    padding-right: 24px;
+    padding-left: 8px;
+}
+
+.about-btn:hover:after {
+    opacity: 1;
+    right: 20px;
+}
+
+
+
+
 
 /* ---- SKILL SECTION ---- */
 
@@ -249,7 +326,8 @@ a {
     background-color: #f5f2f0;
 }
 
-.skill-left, .skill-right {
+.skill-left,
+.skill-right {
     width: 50%;
 }
 
@@ -324,7 +402,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .portfolio-links {
@@ -338,11 +416,11 @@ a {
 }
 
 .portfolios {
-    margin-top: 20px;
+    margin-top: 30px;
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-template-rows: auto auto;
-    gap: 20px;
+    gap: 40px;
 }
 
 .portfolio-items img {
@@ -352,11 +430,46 @@ a {
 }
 
 .portfolio-btn {
-    background: #111;
+    background-color: #111;
+    border: none;
     color: #fff;
-    padding: 15px 48px;
-    margin-top: 60px;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 16px;
+    width: 180px;
+    transition: all 0.3s;
+    cursor: pointer;
+    margin-top: 50px;
 }
+
+.portfolio-btn {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;
+}
+
+.portfolio-btn:after {
+    content: '»';
+    position: absolute;
+    font-size: 2em;
+    opacity: 0;
+    top: 7px;
+    right: -20px;
+    transition: 0.3s;
+}
+
+.portfolio-btn:hover {
+    padding-right: 24px;
+    padding-left: 8px;
+}
+
+.portfolio-btn:hover:after {
+    opacity: 1;
+    right: 20px;
+}
+
+
 
 /* ---- TESTIMONIAL SECTION ---- */
 
@@ -368,12 +481,11 @@ a {
 }
 
 .testimonial-left {
-    width: 35%;
+    width: 38%;
 }
 
 .testimonial-left img {
     width: 100%;
-    height: 100%;
 }
 
 .testimonial-right {
@@ -381,7 +493,7 @@ a {
     padding: 100px 150px;
 }
 
-.testimonial-right > p {
+.testimonial-right>p {
     padding-top: 50px;
     color: #282828;
     line-height: 1.8em;
@@ -402,7 +514,7 @@ a {
     font-weight: 500;
 }
 
-.users > span{
+.users>span {
     color: #737373;
     font-size: 0.8em;
     font-weight: 500;
@@ -414,7 +526,7 @@ a {
 #awardWrapper {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     padding: 100px 16vw;
 }
 
@@ -475,7 +587,7 @@ a {
     align-items: center;
     justify-content: flex-start;
     margin-top: 50px;
-    
+
 }
 
 .blog-box .blog {
@@ -535,7 +647,8 @@ a {
     align-items: center;
 }
 
-.footer-left , .footer-right {
+.footer-left,
+.footer-right {
     width: 47%;
 }
 
@@ -595,5 +708,3 @@ a {
     left: 0;
     bottom: -5px;
 }
-
-
