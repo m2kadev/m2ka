@@ -744,6 +744,7 @@ a {
     padding-right: 1vw;
     font-family: 'Manrope';
     padding-left: 1vw;
+    width: 25%;
 }
 
 .blog:first-child {
