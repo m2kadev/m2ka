@@ -329,7 +329,12 @@
 
     .nav-items li {
         border-bottom: 1px solid #f5f2f0;
-        padding-top: 5px;
+        padding-top: 3px;
+    }
+
+    .nav-navbar #closeNav {
+        top: 10px;
+        font-size: 0.8em;
     }
 
     .nav-items li a {
@@ -357,6 +362,17 @@
 
     .header-content {
         flex-direction: column;
+        flex-flow: column-reverse;
+    }
+
+    .my-name {
+        padding-top: 15px;
+    }
+
+
+    .left-header {
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 
     .left-header h1 {
@@ -373,7 +389,6 @@
 
     .right-header {
         position: relative !important;
-        margin-top: 100px;
     }
 
     /* abouot */
@@ -502,7 +517,7 @@
     }
 
     .left-header {
-        padding-top: 150px;
+        padding-top: 50px;
     }
 
     .about-left h2 {
