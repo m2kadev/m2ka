@@ -11,6 +11,12 @@ font-family: 'Inconsolata',monospace;
 
 /* GOLBAL */
 
+.navbg {
+    background-color: #111;
+    position: fixed !important;
+    color: #fff !important;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -40,9 +46,9 @@ a {
 
 .navbar {
     width: 100%;
-    padding: 0 16vw;
+    padding: 15px 16vw;
     position: absolute;
-    top: 50px;
+    top: 0px;
     left: 0;
     display: flex;
     justify-content: space-between;
@@ -52,16 +58,17 @@ a {
     font-size: 1.7em;
     color: #111;
     z-index: 999;
+    transition: 0.4s;
 }
 
 .nav-navbar {
-    position: absolute;
-    top: -50px;
+    position: fixed;
+    top: 0px;
     right: 0;
     background-color: #fff;
     font-family: 'Manrope';
     width: 0px;
-    height: 100vh;
+    height: 150vh;
     transition: 0.3s ease-out;
     z-index: 999;
 }
@@ -175,6 +182,7 @@ a {
 
 .header-row span {
     padding-left: 10px;
+    letter-spacing: 2px;
 }
 
 .header-row span {
@@ -727,6 +735,7 @@ a {
     align-items: center;
     justify-content: flex-start;
     margin-top: 50px;
+    flex-wrap: wrap;
 
 }
 

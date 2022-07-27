@@ -1,0 +1,531 @@
+@media (max-width: 1240px) {
+
+    /* navbar */
+
+    .navbar {
+        padding: 15px 10vw;
+    }
+
+    .nav-heading {
+        font-size: 1em;
+    }
+
+    .nav-heading span {
+        font-size: 0.8em;
+    }
+
+    /* header */
+
+    .left-header {
+        padding-left: 10vw;
+    }
+
+    .header-row i {
+        font-size: 1em;
+    }
+
+    .header-row span {
+        font-size: 0.9em;
+    }
+
+    .left-header h1 {
+        font-size: 2.7em;
+    }
+
+    .left-header p {
+        font-size: 1.05em;
+    }
+
+    .left-header .header-btn {
+        display: none;
+    }
+
+    /* about */
+
+    #aboutWrapper {
+        padding: 50px 10vw;
+    }
+
+    .content-row span {
+        font-size: 0.9em;
+    }
+
+    .about-left h2{
+        font-size: 2em;
+    }
+
+    .about-right p {
+        font-size: 1.05em;
+    }
+
+    .about-btn {
+        padding: 13px;
+    }
+
+    /* skills */
+
+    #skillWrapper {
+        padding: 50px 10vw;
+    }
+
+    .skill-left h2 {
+        font-size: 2em;
+    }
+
+    .skill-right p {
+        font-size: 1.05em;
+    }
+
+    .progress-header {
+        font-size: 0.9em;
+    }
+
+    /* portfolio */
+
+    #portfolioWrapper {
+        padding: 50px 10vw;
+    }
+
+    #portfolioWrapper h2 {
+        font-size: 2em;
+    }
+
+    .portfolio-links a {
+        font-size: 1.05em;
+    }
+
+    .portfolio-btn {
+        padding: 13px;
+    }
+
+    .portfolio-btn::after {
+        top: 4px;
+    }
+
+    /* testimonial */
+
+    .testimonial-right {
+        padding: 50px 10vw 0 100px;
+    }
+
+    .testimonial-right > p {
+        font-size: 1.05em;
+    }
+
+    /* awards */
+
+    #awardWrapper {
+        padding: 50px 10vw;
+    }
+
+    #awardWrapper h2 {
+        font-size: 2em;
+    }
+
+    .award-box {
+        margin-top: 40px;
+    }
+
+    .award {
+        padding: 10px 0;
+    }
+
+    .award p {
+        font-size: 1.05em;
+    }
+
+    /* blogs */
+
+    #blogWrapper {
+        padding: 50px 10vw;
+    }
+
+    #blogWrapper h2 {
+        font-size: 2em;
+    }
+
+    /* footer */
+
+    #footerWrapper {
+        padding: 50px 10vw;
+    }
+
+    .footer-heading h1 {
+        font-size: 2.7em;
+    }
+
+    .footer-left p {
+        font-size: 1.05em;
+    }
+
+    .footer-right a{
+        font-size: 1.8em;
+    }
+
+}
+
+@media (max-width: 1024px) {
+
+    #headerWrapper {
+        height: 100vh;
+    }
+
+    .navbar {
+        top: 0px;
+        padding: 20px 5vw;
+    }
+
+    .left-header {
+        padding-left: 5vw;
+        padding-top: 170px;
+        
+    }
+
+    .left-header h1 {
+        font-size: 2.5em;
+    }
+
+    .right-header {
+        display: flex;
+        background: #a78b7d;
+        align-items: flex-end;
+    }
+
+    /* about */
+
+    #aboutWrapper {
+        padding: 50px 5vw;
+    }
+
+    .content-row span {
+        font-size: 0.8em;
+    }
+
+    .about-left h2 {
+        font-size: 2em;
+    }
+
+    .about-right p {
+        font-size: 1em;
+    }
+
+    .about-btn {
+        padding: 13px 0px;
+    }
+
+    /* skill */
+
+    #skillWrapper {
+        padding: 50px 5vw;
+    }
+
+    .skill-left h2 {
+        font-size: 2em;
+    }
+
+    .skill-right p {
+        font-size: 1em;
+    }
+
+    .progress-header {
+        font-size: 0.8em;
+    }
+
+    /* portfolio */
+
+    #portfolioWrapper {
+        padding: 50px 5vw;
+    }
+
+    #portfolioWrapper h2{
+        font-size: 2em;
+    }
+
+    .portfolio-links a {
+        font-size: 1em;
+    }
+
+    .portfolios {
+        grid-template-columns: auto auto auto;
+    }
+
+    /* testimonial */
+
+    .testimonial-right {
+        padding-bottom: 30px;
+    }
+
+    .testimonial-left {
+        background-color: #a78b7d;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    /* award */
+
+    #awardWrapper {
+        padding: 50px 5vw;
+    }
+
+    #awardWrapper h2 {
+        font-size: 2em;
+    }
+
+    .award p {
+        font-size: 1em;
+    }
+
+    .award span {
+        font-size: 0.8em;
+    }
+
+    /* blog */
+
+    #blogWrapper {
+        padding: 50px 5vw;
+    }
+
+    #blogWrapper h2 {
+        font-size: 2em;
+    }
+
+    .blog p {
+        font-size: 0.9em;
+    }
+
+    /* footer */
+
+    #footerrWrapper {
+        padding: 50px 5vw;
+    }
+
+    .footer-heading h1 {
+        font-size: 2.3em;
+    }
+
+    .footer-left p {
+        font-size: 0.9em;
+    }
+
+    .footer-right p{
+        font-size: 1.5em;
+    }
+
+}
+
+@media (max-width: 786px) {
+
+    /* ----------------- nav -------------------- */
+
+    .nav-navbar {
+        height: 100vh;
+        transition: 0.3s ease-out;
+        z-index: 999;
+    }
+
+    .nav-items {
+        padding: 15px 20px 10px;
+    }
+
+    .nav-items li {
+        border-bottom: 1px solid #f5f2f0;
+        padding-top: 5px;
+    }
+
+    .nav-items li a {
+        color: #111;
+        font-size: 0.5em;
+        font-weight: 600;
+    }
+
+    .navbar {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .nav-heading {
+        font-size: 0.8em;
+    }
+
+    .nav-heading span {
+        font-size: 0.8em;
+    }
+
+    #headerWrapper {
+        height: unset !important;
+    }
+
+    .header-content {
+        flex-direction: column;
+    }
+
+    .left-header h1 {
+        font-size: 3em !important;
+    }
+
+    .left-header p {
+        font-size: 1.3em !important;
+    }
+
+    .left-header, .right-header {
+        width: 100%;
+    }
+
+    .right-header {
+        position: relative !important;
+        margin-top: 100px;
+    }
+
+    /* abouot */
+
+    #aboutWrapper {
+        flex-direction: column;
+
+    }
+
+    .about-left, .about-right {
+        width: 100%;
+    }
+
+    .about-right {
+        margin-top: 50px;
+    }
+
+    /* skill */
+
+    #skillWrapper {
+        flex-direction: column;
+    }
+
+    .skill-left, .skill-right {
+        width: 100%;
+    }
+
+    .skill-right {
+        margin-top: 50px;
+    }
+
+    /* portfolio */
+
+    .portfolio-links {
+        display: none;
+    }
+
+    .portfolios {
+        grid-template-columns: auto auto;
+    }
+
+    /* testimonial */
+
+    #testimonialWrapper {
+        flex-direction: column;
+    }
+
+    .testimonial-left, .testimonial-right {
+        width: 100%;
+    }
+
+    .testimonial-right {
+        padding-bottom: 50px;
+        padding-left: 5vw;
+    }
+
+    /* award */
+
+    .award-box {
+        gap: 30px;
+    }
+
+    .award {
+        width: 100%;
+    }
+
+    /* blogs */
+
+    .blog-box {
+        gap: 30px;
+    }
+
+    .blog {
+        padding-bottom: 20px;
+        width: 45%;
+        border-right: none !important;
+        border-bottom: 1px solid #e3e3e3;
+    }
+
+    /* footer */
+
+    .footer-heading h1 {
+        width: 80%;
+        font-size: 1.8em !important;
+    }
+
+    .footer-left p {
+        font-size: 0.8em !important;
+    }
+
+    .footer-links .footer-left .social-links .social a {
+        font-size: 0.7em;
+    }
+
+    .footer-left, .footer-right {
+        width: 100%;
+    }
+
+    .footer-right {
+        margin-top: 40px;
+    }
+
+    .footer-right a {
+        font-size: 1.3em !important;
+    }
+}
+
+@media (max-width: 420px) {
+    .left-header h1 {
+        font-size: 2.5em !important;
+    }
+
+    .left-header p {
+        font-size: 1em !important;
+    }
+}
+
+@media (max-width: 350px) {
+
+    .left-header h1 {
+        font-size: 2em !important;
+    }
+
+    .left-header p {
+        font-size: 0.9em !important;
+    }
+
+    .left-header {
+        padding-top: 150px;
+    }
+
+    .about-left h2 {
+        font-size: 1.7em;
+    }
+
+    .skill-left h2 {
+        font-size: 1.7em;
+    }
+
+    #portfolioWrapper h2 {
+        font-size: 1.7em;
+    }
+
+    #awardWrapper h2 {
+        font-size: 1.7em;
+    }
+
+    #blogWrapper h2 {
+        font-size: 1.7em;
+    }
+
+    .blog {
+        width: 100%;
+    }
+}
