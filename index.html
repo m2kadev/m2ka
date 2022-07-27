@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style.css">
 
 
-    <title>myPortfolio</title>
+    <title>m2ka</title>
 </head>
 <body>
 
@@ -24,8 +24,37 @@
                 <span>C </span>
                 reatify.
             </p>
-            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars" id="openNav" onclick="openNavbar()"></i>
+
+            <div class="nav-navbar">
+                <ul class="nav-items">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Awards</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                </ul>
+
+                <div class="currentProject">
+                    <p>My current project</p>
+                    <div class="project-name">
+                        <a href="#">food panda page</a>
+                    </div>
+                    <img src="images/portfolio/current.png" >
+
+                </div>
+
+                <i class="fa-solid fa-xmark" id="closeNav" onclick="closeNavbar()"></i>
+            </div>
+
+
         </div>
+
+       
+
+
 
         <div class="header-content">
 
@@ -178,22 +207,28 @@
             <div class="portfolios">
                 <div class="portfolio-items portfolio1">
                     <img src="images/portfolio/portfolio1.png" >
+                    <a href="https://github.com/m2kadev/Furniture">Github Link</a>
                 </div>
                 <div class="portfolio-items portfolio2">
                     <img src="images/portfolio/portfolio2.png">
+                    <a href="#">Github Link</a>
                 </div>
                 <div class="portfolio-items portfolio3">
                     <img src="images/portfolio/portfolio3.png">
+                    <a href="https://github.com/m2kadev/myCompany">Github Link</a>
                 </div>
                 <div class="portfolio-items portfolio4">
                     <img src="images/portfolio/portfolio4.png">
+                    <a href="https://github.com/m2kadev/Portfolio">Github Link</a>
                 </div>
                 <div class="portfolio-items portfolio5">
                     <img src="images/portfolio/portfolio2.png">
+                    <a href="https://github.com/m2kadev/BriefHistoryOfVietnam">Github Link</a>
                 </div>
 
                 <div class="portfolio-items portfolio6">
                     <img src="images/portfolio/portfolio1.png">
+                    <a href="https://github.com/m2kadev/Furniture">Github Link</a>
                 </div>
             </div>
 
@@ -345,6 +380,10 @@
             </div>
         </div>
     </section>
+
+
+
+    <script src="script.js"></script>
 
 </body>
 </html>
