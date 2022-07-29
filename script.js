@@ -35,3 +35,17 @@ function closeNavbar() {
     navBar.style.width = "0";
     closeNav.style.display = "none";
 }
+
+let childs = document.getElementById('childs');
+
+function showChilds() {
+
+    
+    
+
+    if (childs.classList.contains('show-childs')) {
+        childs.classList.remove('show-childs');
+    }else {
+        childs.classList.add('show-childs');
+    } 
+}

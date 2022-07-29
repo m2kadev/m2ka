@@ -633,6 +633,8 @@ a {
     margin-top: 50px;
 }
 
+/* portfolio link for large screen size */
+
 .portfolio-links {
     display: flex;
 }
@@ -663,6 +665,20 @@ a {
     transform: scale(1);
 }
 
+/* portfolio links for large screen size */
+
+/* portfolio link for small screen size */
+
+.portfolio-links-small {
+    display: none;
+}
+
+
+/* portfolio lins for small screen size */
+
+
+
+
 .portfolios {
     margin-top: 100px;
     display: grid;
@@ -681,18 +697,15 @@ a {
     transition: 0.3s ease-in;
 }
 
-.portfolio-items:hover {
-    box-shadow: 1rem 1em 3rem 1rem #cf2e2e;
+.portfolio-items img {
+    width: 100%;
+    border: none;
+    transition: 0.3s ease;
+    height: 100%;
 }
 
-@keyframes shakeflip {
-    0% {
-        transform: rotateY(-40deg);
-    }
-
-    100% {
-        transform: rotateY(50deg);
-    }
+.portfolio-items:hover {
+    box-shadow: -2rem 0 3rem -2rem #000 !important;
 }
 
 
@@ -757,12 +770,7 @@ a {
     visibility: visible;
 }
 
-.portfolio-items img {
-    width: 100%;
-    border: none;
-    transition: 0.3s ease;
-    height: 100%;
-}
+
 
 .portfolio-btn {
 
@@ -793,60 +801,6 @@ a {
     box-shadow: -2rem 0 3rem -2rem #000 !important;
 }
 
-
-
-
-
-/* ---- TESTIMONIAL SECTION ---- 
-
-#testimonialWrapper {
-    display: flex;
-    justify-content: center;
-    background-color: #f5f2f0;
-    font-family: 'Manrope';
-}
-
-.testimonial-left {
-    width: 38%;
-}
-
-.testimonial-left img {
-    width: 100%;
-}
-
-.testimonial-right {
-    width: 65%;
-    padding: 100px 150px;
-}
-
-.testimonial-right>p {
-    padding-top: 50px;
-    color: #282828;
-    line-height: 1.8em;
-    font-size: 1.3em;
-    padding-bottom: 20px;
-    font-weight: 300;
-}
-
-.testimonial-right .users {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-}
-
-.users p {
-    color: #111;
-    font-size: 1.2em;
-    font-weight: 500;
-}
-
-.users>span {
-    color: #737373;
-    font-size: 0.8em;
-    font-weight: 500;
-}  
-
-*/
 
 /* TESTIMONIAL SECTION */
 
@@ -1205,6 +1159,7 @@ a {
 }
 
 .footer-links .footer-left .social-links {
+    cursor: pointer;
     margin-top: 50px;
     display: flex;
     justify-content: flex-start;

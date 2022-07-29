@@ -242,6 +242,9 @@
         <h2>Latest Works</h2>
 
         <div class="portfolio-box">
+
+            <!-- for large device -->
+
             <div class="portfolio-links">
                 <a href="#">All</a>
                 <a href="#">WEBpage</a>
@@ -249,11 +252,39 @@
                 <a href="#" class="active">Designs</a>
                 <a href="#">Logos</a>
             </div>
+
+            <!-- for large device -->
+
+            <!-- for small device -->
+
+            <div class="portfolio-links-small">
+                <div class="p-small-link-container">
+                    <div class="p-small-left" onclick="showChilds()">
+                        <p>All</p>
+                        <i class="fa-solid fa-caret-down"></i>
+                        <div class="portfolio-childs" id="childs">
+                            <a href="#">WEBpage</a>
+                            <a href="#">Photography</a>
+                            <a href="#" class="active">Designs</a>
+                            <a href="#">Logos</a>
+                        </div>
+                    </div>
+                    <div class="p-small-right">
+                        <button type="submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- for small device -->
+
+
             <div class="portfolios">
+
                 <div class="portfolio-items portfolio1">
                     <img src="images/portfolio/portfolio1.png" >
                     <a href="https://github.com/m2kadev/Furniture">Github Link</a>
                 </div>
+                
                 <div class="portfolio-items portfolio2">
                     <img src="images/portfolio/portfolio8.png">
                     <a href="#">Github Link</a>
