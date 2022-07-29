@@ -91,6 +91,7 @@ a {
 .nav-items li {
     padding-top: 10px;
     position: relative;
+    border: none;
 }
 
 .nav-items li::before {
@@ -319,7 +320,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    perspective: 800px;
+    perspective: 1300px;
     perspective-origin: top right;
     
 }
