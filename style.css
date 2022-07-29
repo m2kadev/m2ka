@@ -518,15 +518,20 @@ a {
         0 2px 3px rgba(0, 0, 0, .4) !important;
     border-radius: 4px;
     margin-top: 50px;
+
+    transition: 0.2s ease-in;
 }
 
 .about-btn > i {
     padding-left: 5px;
 }
 
-.portfolio-box > i {
-    padding-left: 5px;
+.about-btn:hover {
+    transform: translate(-5px);
+    box-shadow: -2rem 0 3rem -2rem #000 !important;
 }
+
+
 
 
 
@@ -660,7 +665,7 @@ a {
     width: 100%;
     transform: scale(0);
     height: 2px;
-    background-color: #ff7a18;
+    background: linear-gradient(130deg, #ff7a18, #af002d 41.07%, #319197 76.05%);
     transition: 0.1s ease-out;
 }
 
@@ -789,11 +794,19 @@ a {
         0 2px 3px rgba(0, 0, 0, .4) !important;
     border-radius: 4px;
     margin-top: 50px;
+    transition: 0.2s ease-in;
 }
 
 .portfolio-btn > i {
     padding-left: 5px;
 }
+
+.portfolio-btn:hover {
+    transform: translate(-5px);
+    box-shadow: -2rem 0 3rem -2rem #000 !important;
+}
+
+
 
 
 
