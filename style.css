@@ -71,7 +71,12 @@ a {
     position: fixed;
     top: 0px;
     right: 0;
-    background-color: #fff;
+    background: rgb(94, 94, 94);
+    background: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+    box-shadow: rgb(119, 119, 119) 1px 1px 0px 0px inset,
+            rgba(0, 0, 0, 0.4) 0px 2px 3px 0px inset 0px -3px 0px rgba(0, 0, 0, 0.1),
+            0px 3px 0px rgba(0, 0, 0, 0.1) inset 1px 1px 0 #777,
+            0 2px 3px rgba(0, 0, 0, .4) !important;
     font-family: 'Manrope';
     width: 0px;
     height: 150vh;
@@ -84,12 +89,23 @@ a {
 }
 
 .nav-items li {
-    border-bottom: 1px solid #f5f2f0;
     padding-top: 10px;
+    position: relative;
+}
+
+.nav-items li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(130deg, #ff7a18, #af002d 41.07%, #319197 76.05%);
 }
 
 .nav-items li a {
-    color: #111;
+    font-family: 'Inconsolata';
+    color: #fff;
     font-size: 0.6em;
     font-weight: 600;
 }
@@ -100,7 +116,7 @@ a {
 }
 
 .nav-navbar #closeNav {
-    color: #111;
+    color: #fff;
     position: absolute;
     cursor: pointer;
     top: 30px;
@@ -116,11 +132,11 @@ a {
 
 .currentProject p {
     font-size: 0.6em;
-    color: #111;
+    color: #af002d;
 }
 
 .nav-navbar .currentProject .project-name a {
-    color: #A78B7D;
+    color: #fff;
     font-size: 0.5em;
 }
 
@@ -164,7 +180,7 @@ a {
 */
 
 .nav-heading span {
-    color: #ff7a18;
+    color: #af002d;
     font-weight: 800;
 }
 
@@ -190,7 +206,7 @@ a {
 
 .header-row i {
     font-size: 1.3em;
-    color: #ff7a18;
+    color: #af002d;
 }
 
 
@@ -632,7 +648,7 @@ a {
 }
 
 .active {
-    color: #ff7a18 !important;
+    color: #af002d !important;
     font-weight: 600;
 }
 
