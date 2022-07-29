@@ -63,6 +63,7 @@ a {
     font-size: 1.7em;
     color: #fff;
     z-index: 999;
+    box-shadow: -2rem 0 3rem -2rem #000;
     transition: 0.4s;
 }
 
@@ -243,6 +244,25 @@ a {
             0 2px 3px rgba(0, 0, 0, .4) !important;
 }
 
+
+
+.header-btn > i {
+    position: absolute;
+    right: 0px;
+    top: -1px;
+    text-align: center;
+    width: 50px;
+    line-height: 40px;
+    border-radius: 50%;
+    height: 50px;
+    background: #111;
+    color: #fff;
+    font-weight: 500;
+    border: 3px solid #282828;
+}
+
+/*
+
 .header-btn::after {
     box-sizing: border-box;
     content: '»';
@@ -259,20 +279,142 @@ a {
     font-weight: 500;
     border-radius: 50%;
     border: 1px solid #282828;
-}
+} */
 
 
 .right-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 50%;
     height: 100%;
-    background-color: #7ca694;
     right: 0;
     top: 0;
 }
 
-.right-header img {
-    width: 100%;
+
+
+/* animation section */
+
+.right-container {
+    width: 400px;
+    height: 400px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 800px;
+    perspective-origin: top right;
+    
 }
+
+
+/* The child element, with 3D tranforms preserved */
+.cube {
+    top: 50px;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: cubeRotate 20s linear infinite;
+    transition: 0.5s ease-in;
+}
+
+.top > img {
+    width: 100%;
+    transition: 0.5s ease-out;
+    transform: translateY(200px) scale(0);
+    transition-delay: 1s;
+    border: none;
+    border-radius: 8px;
+}
+
+.cube:hover ,
+.cube:hover > .gif{
+    animation: unset !important;
+}
+
+.cube:hover > .top{
+    transform: translateY(-200px) rotateY(180deg) rotateZ(-360deg);
+    opacity: 1 !important;
+}
+
+.cube:hover > .front { transform: translateZ(120px);}
+.cube:hover > .back { transform: translateZ(-120px);}
+.cube:hover > .left { transform: rotateY(90deg) translateZ(-120px);}
+.cube:hover > .right { transform: rotateY(-90deg) translateZ(-120px);}
+
+.cube:hover > .top img {
+    transform: translateY(0px) scale(1.1);
+}
+
+ @keyframes cubeRotate {
+     form {
+         transform: rotateY(0deg) rotateX(720deg) rotateZ(0deg);
+     }
+
+     to {
+         transform: rotateY(360deg) rotateX(0deg) rotateZ(360deg);
+     }
+ }
+
+@keyframes shrink {
+    100%, 0% {
+        transform: scaleY(1);
+    }
+
+    50% { transform: scaleY(0.8); animation-timing-function: ease-in;}
+}
+
+
+/* The sides of the cube, absolutely positioned */
+.side {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+}
+
+
+/* Background colors for the cube's sides to help visualize the work */
+.front, .back, .left, .right, .top, .bottom {
+    background: linear-gradient(130deg, #ff7a18, #af002d 41.07%, #319197 76.05%);
+}
+
+.front {
+    transform: translateZ(100px);
+    transition: 0.2s;
+}
+
+.back {
+    transform: translateZ(-100px);
+    transition: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.left {
+    transform: rotateY(90deg) translateZ(100px);
+    transition: 0.2s;
+    transition-delay: 0.4s;
+}
+
+.right {
+    transition: 0.2s;
+    transform: rotateY(-90deg) translateZ(100px);
+    transition-delay: 0.6s;
+
+}
+
+.top {
+    transform: rotateX(90deg) translateZ(100px);
+    transition: 0.4s ease-in;
+}
+
+.bottom {
+    transform: rotateX(-90deg) translateZ(100px);
+}
+
+
 
 
 
@@ -376,6 +518,14 @@ a {
         0 2px 3px rgba(0, 0, 0, .4) !important;
     border-radius: 4px;
     margin-top: 50px;
+}
+
+.about-btn > i {
+    padding-left: 5px;
+}
+
+.portfolio-box > i {
+    padding-left: 5px;
 }
 
 
@@ -582,7 +732,7 @@ a {
     position: absolute;
     width: 50%;
     height: 100%;
-    background-color: #ff7a18;
+    background: linear-gradient(130deg, #ff7a18, #af002d 41.07%, #319197 76.05%);
     top: 0;
     left: 0;
     opacity: 0;
@@ -595,7 +745,7 @@ a {
     position: absolute;
     width: 50%;
     height: 100%;
-    background-color: #ff477e;
+    background: linear-gradient(130deg, #ff7a18, #af002d 41.07%, #319197 76.05%);
     top: 0;
     right: 0;
     opacity: 0;
@@ -639,6 +789,10 @@ a {
         0 2px 3px rgba(0, 0, 0, .4) !important;
     border-radius: 4px;
     margin-top: 50px;
+}
+
+.portfolio-btn > i {
+    padding-left: 5px;
 }
 
 

@@ -198,7 +198,6 @@
 
     .right-header {
         display: flex;
-        background: #a78b7d;
         align-items: flex-end;
     }
 
@@ -394,6 +393,7 @@
 
 
     .left-header {
+        margin-top: 100px;
         padding-top: 50px;
         padding-bottom: 50px;
     }
@@ -525,7 +525,6 @@
     /* testimonial */
 
         #testimonialWrapper {
-            background-color: red;
             height: 900px !important;
         }
 
@@ -553,6 +552,52 @@
 
 
 @media (max-width: 420px) {
+
+
+    /* animation */
+
+    .cube {
+        margin-top: 100px;
+        width: 160px;
+        height: 160px;
+    }
+
+    .front {
+        transform: translateZ(80px);
+    }
+
+    .back {
+        transform: translateZ(-80px);
+    }
+
+    .left {
+        transform: rotateY(90deg) translateZ(80px);
+    }
+
+    .right {
+        transform: rotateY(-90deg) translateZ(80px);
+
+    }
+
+    .top {
+        transform: rotateX(90deg) translateZ(80px);
+    }
+
+    .bottom {
+        transform: rotateX(-90deg) translateZ(80px);
+    }
+
+    .cube:hover {
+        margin-top: 180px;
+    }
+
+    .cube:hover > .front { transform: translateZ(100px);}
+    .cube:hover > .back { transform: translateZ(-100px);}
+    .cube:hover > .left { transform: rotateY(90deg) translateZ(-100px);}
+    .cube:hover > .right { transform: rotateY(-90deg) translateZ(-100px);}
+
+    /* end animation */
+
     .left-header h1 {
         font-size: 2.5em !important;
     }
