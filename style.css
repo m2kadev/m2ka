@@ -67,6 +67,72 @@ a {
     transition: 0.4s;
 }
 
+.nav-heading {
+    font-size: 1.1em;
+}
+
+
+.nav-heading span {
+    color: #af002d;
+    font-weight: 800;
+}
+
+/* navbar for large screen size */
+
+.nav-large {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-large ul {
+    display: flex;
+}
+
+.nav-large ul li {
+    font-size: 0.64em;
+    font-family: 'Inconsolata';
+    font-style: italic;
+    position: relative;
+}
+
+.nav-large ul li::before {
+    content: '';
+    width: 100%;
+    position: absolute;
+    height: 2px;
+    transform: scale(0);
+    left: 0;
+    bottom: -5px;
+    transition: 0.2s ease-out;
+    background: linear-gradient(130deg, #ff7a18, #af002d 41.07%, #319197 76.05%);
+}
+
+.nav-large ul li:hover::before {
+    transform: scale(1);
+}
+
+.nav-large ul li a {
+    padding: 0 0.6em;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+
+
+.navbar #openNav {
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+
+
+/* navbar for small screen size  */
+
 .nav-navbar {
     position: fixed;
     top: 0px;
@@ -82,6 +148,7 @@ a {
     height: 150vh;
     transition: 0.3s ease-out;
     z-index: 999;
+    display: none;
 }
 
 .nav-items {
@@ -109,11 +176,6 @@ a {
     color: #fff;
     font-size: 0.6em;
     font-weight: 600;
-}
-
-.navbar #openNav {
-    color: #fff;
-    cursor: pointer;
 }
 
 .nav-navbar #closeNav {
@@ -145,45 +207,8 @@ a {
     width: 100%;
 }
 
-.nav-heading {
-    font-size: 1.1em;
-}
 
-/*
-.nav-heading span {
-    text-shadow: rgb(230, 230, 230) 4px 0px 0px, 
-    rgb(230, 230, 230) 3.87565px 0.989616px 0px, 
-    rgb(230, 230, 230) 3.51033px 1.9177px 0px,
-     rgb(230, 230, 230) 2.92676px 2.72656px 0px, 
-     rgb(230, 230, 230) 2.16121px 3.36588px 0px, 
-     rgb(230, 230, 230) 1.26129px 3.79594px 0px, 
-     rgb(230, 230, 230) 0.282949px 3.98998px 0px, 
-     rgb(230, 230, 230) -0.712984px 3.93594px 0px, 
-     rgb(230, 230, 230) -1.66459px 3.63719px 0px,
-      rgb(230, 230, 230) -2.51269px 3.11229px 0px, 
-      rgb(230, 230, 230) -3.20457px 2.39389px 0px, 
-      rgb(230, 230, 230) -3.69721px 1.52664px 0px, 
-      rgb(230, 230, 230) -3.95997px 0.56448px 0px, 
-      rgb(230, 230, 230) -3.97652px -0.432781px 0px, 
-      rgb(230, 230, 230) -3.74583px -1.40313px 0px, 
-      rgb(230, 230, 230) -3.28224px -2.28625px 0px, 
-      rgb(230, 230, 230) -2.61457px -3.02721px 0px, 
-      rgb(230, 230, 230) -1.78435px -3.57996px 0px, 
-      rgb(230, 230, 230) -0.843183px -3.91012px 0px, 
-      rgb(230, 230, 230) 0.150409px -3.99717px 0px, 
-      rgb(230, 230, 230) 1.13465px -3.8357px 0px, 
-      rgb(230, 230, 230) 2.04834px -3.43574px 0px, 
-      rgb(230, 230, 230) 2.83468px -2.82216px 0px,
-       rgb(230, 230, 230) 3.44477px -2.03312px 0px, 
-       rgb(230, 230, 230) 3.84068px -1.11766px 0px,
-        rgb(230, 230, 230) 3.9978px -0.132717px 0px;
-}
-*/
-
-.nav-heading span {
-    color: #af002d;
-    font-weight: 800;
-}
+/* ---- header section ---- */
 
 .header-content {
     display: flex;
