@@ -311,7 +311,7 @@ a {
 
 /* The child element, with 3D tranforms preserved */
 .cube {
-    top: 50px;
+    top: 100px;
     position: relative;
     width: 200px;
     height: 200px;
@@ -329,9 +329,9 @@ a {
     border-radius: 8px;
 }
 
-.cube:hover ,
-.cube:hover > .gif{
+.cube:hover {
     animation: unset !important;
+    top: 180px !important;
 }
 
 .cube:hover > .top{
